@@ -1,0 +1,49 @@
+*{
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    margin-top: -3%;
+}
+
+.nombre{
+    margin-top: 3%;
+    color: white;
+    text-align: center;
+}
+
+img {
+    width: 25%;
+    height: 25%;
+    border-radius: 200px;
+    border:solid white;
+    margin-top: 2%;
+}
+
+.titulo{
+    margin-top: 2%;
+    color: white;
+    text-align: center;
+}
+
+.texto {
+    margin-top: 3%;
+    color: white;
+    text-align: justify;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+}
