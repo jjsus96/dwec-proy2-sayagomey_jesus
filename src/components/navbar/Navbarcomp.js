@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import './Navbar.css';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 
 export default class Navbarcomp extends Component {
   render() {
     return <div>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar className='menu' collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
         <Navbar.Brand href="#home">Jesús Sayago Mey</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
