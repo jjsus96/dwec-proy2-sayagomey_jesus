@@ -13,6 +13,7 @@ export default class Navbarcomp extends Component {
           <Nav className="me-auto">
             <Nav.Link href="#home">Inicio</Nav.Link>
             <Nav.Link href="#formation">Formación</Nav.Link>
+            <Nav.Link href="#projects">Proyectos</Nav.Link>
             <Nav.Link href="#contact">Contacto</Nav.Link>
           </Nav>
           <Nav>
