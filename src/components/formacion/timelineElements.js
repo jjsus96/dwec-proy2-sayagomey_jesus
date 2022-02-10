@@ -17,7 +17,7 @@ let timelineElements = [
       id: 3,
       title: "Sistemas Microinformáticos y Redes",
       location: "IES Mar de Cádiz, Puerto de Santa María, Cádiz",
-      date: "Sep 2017 - Jun 2019",
+      date: "Sep 2019 - Jun 2019",
       icon: "school",
     },
     {

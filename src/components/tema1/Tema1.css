@@ -1,0 +1,58 @@
+
+.titulo_tema1{
+    margin-top: 5%;
+    color: white;
+    text-align: center;
+}
+
+.titulo_articulo{
+    margin-top: 5%;
+    color: white;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.texto_articulo{
+    color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: justify;
+}
+
+.imagen_cliente{
+    border: 0;
+    border-radius: 0;
+    display: block;
+    margin: auto;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.titulo_lenguaje{
+    margin-top: 5%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.imagen_lenguaje{
+    border: 0;
+    border-radius: 0;
+    display: block;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.imagen_grafica{
+    border: 0;
+    border-radius: 0;
+    display: block;
+    margin: auto;
+    width: 40%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: rgba(255, 255, 255, 0.1);
+}

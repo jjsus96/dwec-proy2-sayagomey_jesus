@@ -4,6 +4,7 @@ import Navbar from './components/navbar/Navbarcomp'
 import Inicio from './components/inicio/Inicio'
 import Formacion from './components/formacion/Formacion'
 import Video from './components/video/Video';
+import Tema1 from './components/tema1/Tema1';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Inicio />
       <Formacion />
+      <Tema1 />
       </div>
     </div>
   );
