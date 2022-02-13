@@ -11,7 +11,7 @@ import Git from './../../media/Git.png';
 
 export const Tema1 = () => {
   return <div>
-      <h1 className='titulo_tema1'>Recuperación Tema 1</h1>
+      <h1 className='titulo_tema'>Recuperación Tema 1</h1>
       <h3 className='titulo_articulo'>Modelo de ejecución Cliente/Servidor.</h3>
       <p className='texto_articulo'>Es uno de los modelos más usados  para la comunicación entre máquinas, mediante la cual, una máquina (cliente) envía a través de la red una petición a otra máquina (Servidor), siguiendo una serie de protocolos, para poder acceder a una serie de servicios.</p>
       <p className='texto_articulo'>Esta arquitectura consta de varias partes:</p>
@@ -19,7 +19,7 @@ export const Tema1 = () => {
       <p className='texto_articulo'>Servidor, que se encarga de contestar a la petición del cliente y proporcionar dicho servicio.</p>
       <p className='texto_articulo'>Red, que es el medio que utilizan ambas partes para comunicarse y poder realizar y responder a las peticiones.</p>
       <p className='texto_articulo'>Protocolos, son un conjunto de normas que define como debe realizarse la comunicación.</p>  
-      <img src={Cliente} className='imagen_cliente'></img>
+      <img src={Cliente} className='imagen_cliente' alt=''></img>
       <p className='texto_articulo'>Ventajas:</p>
       <ul className='texto_articulo'>
         <li>Mayor control y seguridad de nuestros datos y servicios, ya que estos se encuentran en el servidor y no en la máquina de cada usuario, por lo que se dificulta mucho la posibilidad de dañar el sistema.</li>
@@ -46,15 +46,15 @@ export const Tema1 = () => {
       <h3 className='titulo_articulo'>Lenguajes más relevantes en la actualidad para la programación de clientes web.</h3>
       <p className='texto_articulo'>Cuando pensamos en lenguajes de programación, se nos viene a la cabeza un amplio abanico de posibilidades, pero si acotamos un poco y pensamos en lenguajes orientados a la programación web,  ese número se reduce. Una vez hecha esa acotación, vamos a ver 3 de los lenguajes más utilizados actualmente para la programación web:</p>
       <h5 className='titulo_lenguaje'>Java</h5>
-      <img src={Java} className='imagen_lenguaje'></img>
+      <img src={Java} className='imagen_lenguaje' alt=''></img>
       <p className='texto_articulo'>Desarrollado por Sun Microsystems , es un lenguaje de propósito general que es capaz de utilizarse en la mayoría de sistemas y es muy flexible a la hora de realizar proyectos, ya que permite una infinidad de posibilidades a la hora de realizarlos. Por esto y mucho más es uno de los más usados por los profesionales del sector.</p>
       <h5 className='titulo_lenguaje'>Javascript</h5>
-      <img src={Js} className='imagen_lenguaje'></img>
+      <img src={Js} className='imagen_lenguaje' alt=''></img>
       <p className='texto_articulo'>Es un lenguaje de programación el cuál fue creado con el propósito de hacer las páginas web más interactivas. Este lenguaje se ejecuta del lado del cliente, por lo que no requiere peticiones constantes al servidor, añade funcionalidades a las páginas web de forma limpia y eficaz, como validar formularios o modificar el DOM con lo que logramos darle dinamismo a nuestra página.</p>
       <h5 className='titulo_lenguaje'>Python</h5>
-      <img src={Python} className='imagen_lenguaje'></img>
+      <img src={Python} className='imagen_lenguaje' alt=''></img>
       <p className='texto_articulo'>Este lenguaje tiene una sintaxis simple, además su escritura se facilita al separar los bloques mediante sangrías, es un lenguaje sencillo de aprender por lo que es ampliamente utilizado por los desarrolladores. Además su uso en grandes proyectos como Youtube o Google y la adopción que ha conseguido gracias a los videojuegos, ha hecho que su popularidad se dispare</p>
-      <img src={Grafica} className='imagen_grafica'></img>
+      <img src={Grafica} className='imagen_grafica' alt=''></img>
       <p className='texto_articulo'>En la gráfica podemos ver que aunque hay muchos más lenguajes de programación, los que tienen un mayor uso son los nombrados anteriormente, ya sea por que están mas extendidos o por preferencia de los desarrolladores lo que está claro es que algo están haciendo bien.</p>
       <p className='texto_articulo'>Fuentes:</p>
       <ul className='texto_articulo'>
@@ -74,11 +74,11 @@ export const Tema1 = () => {
       <h3 className='titulo_articulo'>Herramientas utilizadas en la programación de clientes web.</h3>
       <p className='texto_articulo'>Como ya sabemos para poder hacer programación de clientes web es necesario tener algunas nociones básicas sobre programación, pero lo que muchas veces no tenemos en cuenta es que también necesitaremos herramientas para poder llevar a cabo nuestras ideas. Por ello, a continuación vamos a ver algunas de las herramientas utilizadas en la programación web:</p>
       <ul className='texto_articulo'>
-      <img src={Visual} className='imagen_lenguaje'></img>
+      <img src={Visual} className='imagen_lenguaje' alt=''></img>
         <li>Visual Studio Code: Es un editor de código compatible con muchos lenguajes de programación, dispone de una gran cantidad de extensiones que nos permiten facilitar el trabajo de escribir código.  Es uno de los editores más usados en la actualidad debido a su facilidad de uso, su versatilidad y la gran compatibilidad que presenta con las tecnologías actuales.</li>
-        <img src={Chrome} className='imagen_lenguaje'></img>
+        <img src={Chrome} className='imagen_lenguaje' alt=''></img>
         <li>Navegadores: Como por ejemplo Chrome, que es un navegador Web propiedad de Google, el cuál tiene una gran popularidad en la actualidad y que nos ofrece herramientas para probar y ejecutar nuestro código de forma que podamos localizar errores en la ejecución y comprobar que nuestro código se encuentra bien estructurado.</li> 
-        <img src={Git} className='imagen_lenguaje'></img>
+        <img src={Git} className='imagen_lenguaje' alt=''></img>
         <li>Git: Es un software de control de versiones, el cuál nos permite almacenar nuestro código en repositorios almacenados en servidores a los cuales podremos acceder desde cualquier lugar, además nos permitirá volver a cualquiera de los puntos de guardados de nuestro proyecto.</li>
       </ul>
       <p className='texto_articulo'>Ahora que ya las conocemos y hemos visto por encima para que sirve cada una de ellas, es vuestro momento para probarlas y comprobar lo útiles que son si se usan de forma adecuada.</p>
