@@ -7,21 +7,21 @@ const Contacto = () => {
     const validateForm = values => {
         const errors = {};
         if (!values.name) {
-            errors.name = 'Name is required';
+            errors.name = 'El nombre es necesario';
         } else if (values.name.length > 15) {
-            errors.name = 'Must be 15 characters or less';
+            errors.name = 'Debe contener menos de 15 caracteres';
         }
 
 
         if (!values.email) {
-            errors.email = 'Email is required';
+            errors.email = 'El Email es necesario';
         } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-            errors.email = 'Invalid email address';
+            errors.email = 'Dirección de email no válida';
         }
 
 
         if (!values.subject) {
-            errors.subject = 'Subject is required';
+            errors.subject = 'El asunto es necesario';
         }
 
         return errors;

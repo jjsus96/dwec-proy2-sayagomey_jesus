@@ -1,10 +1,8 @@
-.titulo-footer{
-    color: white;
-    text-align: center;
-}
 .footer{
-    margin-top: 10%;
     color: white;
-    position: fixed;
-    z-index: inherit;
+    background-color: #1F1F1F;
+}
+
+.titulofooter {
+    margin-top: 30px;
 }
