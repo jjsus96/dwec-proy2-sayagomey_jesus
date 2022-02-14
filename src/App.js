@@ -6,6 +6,7 @@ import Formacion from './components/formacion/Formacion'
 import Tema1 from './components/tema1/Tema1';
 import Tema3 from './components/tema3/Tema3';
 import Proyectos from './components/proyectos/Proyectos';
+import Contacto from './components/contacto/Contacto';
 import Footer from './components/footer/Footer';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Tema1 />
       <Tema3 />
       <Proyectos />
+      <Contacto />
       <Footer />
       </div>
     </div>
