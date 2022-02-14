@@ -4,7 +4,7 @@ import Jesus from './../../media/Jesus.jpg'
 
 
 export const Inicio = () => {
-  return <div className='contenedor'>
+  return <div className='contenedor' id='home'>
       <br></br>
       <br></br>
       <h1 className='nombre'>Jesús Sayago Mey</h1>

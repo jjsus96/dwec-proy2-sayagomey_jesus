@@ -6,7 +6,7 @@ import './Proyectos.css'
 
 function Proyectos() {
   return (
-      <div>
+      <div id='project'>
           <h1 className='titulo_tema'>Proyectos</h1>
           <p className='texto'>A continuación podréis ver mi último proyecto, juanto al cuál, iré añadiendo nuevos proyectos a medida que los vaya realizando para que así se pueda acceder a ellos de la manera más sencilla posible.</p>
         <br></br>

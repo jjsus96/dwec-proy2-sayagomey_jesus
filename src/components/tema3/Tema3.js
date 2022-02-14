@@ -3,7 +3,7 @@ import './Tema3.css';
 
 function Tema3() {
   return (
-    <div>
+    <div id='tema3'>
         <h1 className='titulo_tema'>Recuperación Tema 3</h1>
         <p className='texto'>En Proceso de encontrar una libreria para mostrar el código que funcione bien.</p>
     </div>

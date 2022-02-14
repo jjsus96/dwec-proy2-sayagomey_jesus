@@ -41,8 +41,8 @@ const Contacto = () => {
         >
             {(formik, isSubmitting) => (
                 
-                <Form>
-                    <h1 className='nombre'>Contacto</h1>
+                <Form id='contact'>
+                    <h1 className='nombre' id='contact'>Contacto</h1>
                     <div className="form-group">
                         <label htmlFor="name" className='texto'>Nombre</label>
                         <Field name="name" className={(formik.touched.name && formik.errors.name) ? 'form-control is-invalid' : 'form-control'} type="text" />

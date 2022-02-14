@@ -10,7 +10,7 @@ import Chrome from './../../media/Chrome.png';
 import Git from './../../media/Git.png';
 
 export const Tema1 = () => {
-  return <div>
+  return <div id='tema1'>
       <h1 className='titulo_tema'>Recuperación Tema 1</h1>
       <h3 className='titulo_articulo'>Modelo de ejecución Cliente/Servidor.</h3>
       <p className='texto_articulo'>Es uno de los modelos más usados  para la comunicación entre máquinas, mediante la cual, una máquina (cliente) envía a través de la red una petición a otra máquina (Servidor), siguiendo una serie de protocolos, para poder acceder a una serie de servicios.</p>
