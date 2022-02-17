@@ -1,10 +1,15 @@
-.form-control{
+.textoformulario{
+    color: white;
+    margin-top: 20px;
+}
+
+.btnform{
+    margin-top: 50px;
+    margin-bottom: 10%;
+}
+
+.centrar{
     margin-left: 15%;
     margin-right: 15%;
     width: 70%;
-}
-.btnform{
-    margin-left: 15%;
-    margin-top: 50px;
-    margin-bottom: 10%;
 }

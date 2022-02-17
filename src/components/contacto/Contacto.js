@@ -41,10 +41,10 @@ const Contacto = () => {
         >
             {(formik, isSubmitting) => (
                 
-                <Form id='contact'>
+                <Form id='contact' className='centrar'>
                     <h1 className='nombre' id='contact'>Contacto</h1>
                     <div className="form-group">
-                        <label htmlFor="name" className='texto'>Nombre</label>
+                        <label htmlFor="name" className='textoformulario'>Nombre</label>
                         <Field name="name" className={(formik.touched.name && formik.errors.name) ? 'form-control is-invalid' : 'form-control'} type="text" />
                         
                         {formik.touched.name && formik.errors.name ? (
@@ -53,7 +53,7 @@ const Contacto = () => {
                     </div>
 
                     <div className="form-group">
-                        <label htmlFor="email" className='texto'>Email</label>
+                        <label htmlFor="email" className='textoformulario'>Email</label>
                         <Field name="email" className={(formik.touched.email && formik.errors.email) ? 'form-control is-invalid' : 'form-control'} type="email" />
                         
                         {formik.touched.email && formik.errors.email ? (
@@ -62,7 +62,7 @@ const Contacto = () => {
                     </div>
 
                     <div className="form-group">
-                        <label htmlFor="subject" className='texto'>Asunto</label>
+                        <label htmlFor="subject" className='textoformulario'>Asunto</label>
                         <Field name="subject" className={(formik.touched.subject && formik.errors.subject) ? 'form-control is-invalid' : 'form-control'} type="text" />
                         
                         {formik.touched.subject && formik.errors.subject ? (
@@ -71,10 +71,10 @@ const Contacto = () => {
                     </div>
 
                     <div className="form-group">
-                        <label htmlFor="content" className='texto'>Mensaje</label>
+                        <label htmlFor="content" className='textoformulario'>Mensaje</label>
                         <Field name="content" className="form-control" as="textarea" rows={3} cols={10} />
                     </div>
-                    <div className="form-group" className='btnform'>
+                    <div className='btnform'>
                         <button type="submit" className="btn btn-primary" disabled={isSubmitting}>{isSubmitting ? "Please wait..." : "Submit"}</button>
                     </div>
 
