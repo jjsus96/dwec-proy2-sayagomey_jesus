@@ -1,28 +1,25 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './components/navbar/Navbarcomp'
-import Inicio from './components/inicio/Inicio'
-import Formacion from './components/formacion/Formacion'
-import Tema1 from './components/tema1/Tema1';
-import Tema3 from './components/tema3/Tema3';
-import Proyectos from './components/proyectos/Proyectos';
-import Contacto from './components/contacto/Contacto';
+import Navbarcomp from './components/navbar/Navbarcomp';
 import Footer from './components/footer/Footer';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import RecuperacionT1 from './components/pages/RecuperacionT1';
+import RecuperacionT3 from './components/pages/RecuperacionT3';
+import Portfolio from './components/pages/Portfolio';
+import Error from './components/pages/Error';
 
 function App() {
   return (
-    <div className="App">
-      <div className='principal'>
-      <Navbar />
-      <Inicio />
-      <Formacion />
-      <Tema1 />
-      <Tema3 />
-      <Proyectos />
-      <Contacto />
+    <BrowserRouter>
+    <Navbarcomp />
+      <Routes>
+        <Route path='/Tema1' element= {<RecuperacionT1 />} />
+        <Route path='/Tema3' element= {<RecuperacionT3 />} />
+        <Route path='/Portfolio' element= {<Portfolio />} />
+        <Route path='*' element= {<Error />} />
+      </Routes>
       <Footer />
-      </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
