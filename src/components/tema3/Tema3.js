@@ -50,24 +50,22 @@ function Tema3() {
           <p className='titulocuadro'>Javascript</p>
           <CopyBlock
             language="javascript"
-            text={`//Calcula diferentes parámetros de una circunferencia/esfera mediante el radio.
+            text={`function Calcular (){
 
-            function Calcular (){
-            
-                let vr = Math.round(document.getElementById("Entrada").value * 100) / 100;
-                let diametro = Math.round(vr * 2 * 100) / 100;
-                let perimetro = Math.round(2 * Math.PI * vr * 100) / 100;
-                let areacirculo = Math.round(Math.PI * Math.pow(vr, 2) * 100) / 100;
-                let areaesfera = Math.round(4 * Math.PI * Math.pow(vr, 2) * 100) / 100;
-                let volumenesfera = Math.round((4/3) * Math.PI * Math.pow(vr, 3) * 100) / 100;
-            
-                if (!isNaN(vr)){
-                    resultado.innerHTML = "El valor del radio de la circunferencia es" + " = " + vr + " cm" + "<br>El diámetro de la circunferencia es" + " = " + diametro + " cm" + "<br>El perímetro de la circunferencia es" + " = " + perimetro + " cm" + "<br>El área de la circunferencia es" + " = " + areacirculo + " cm2" + "<br>El área de la esfera es" + " = " + areaesfera + " cm2" + "<br>El volúmen de la esfera es" + " = " + volumenesfera + " cm3";
-                }
-                else {
-                    alert("El valor introducido no es un número");
-                }    
-            }`}
+              let vr = Math.round(document.getElementById("Entrada").value * 100) / 100;
+              let diametro = Math.round(vr * 2 * 100) / 100;
+              let perimetro = Math.round(2 * Math.PI * vr * 100) / 100;
+              let areacirculo = Math.round(Math.PI * Math.pow(vr, 2) * 100) / 100;
+              let areaesfera = Math.round(4 * Math.PI * Math.pow(vr, 2) * 100) / 100;
+              let volumenesfera = Math.round((4/3) * Math.PI * Math.pow(vr, 3) * 100) / 100;
+          
+              if (!isNaN(vr)){
+                  resultado.innerHTML = "El valor del radio de la circunferencia es" + " = " + vr + " cm" + "<br>El diámetro de la circunferencia es" + " = " + diametro + " cm" + "<br>El perímetro de la circunferencia es" + " = " + perimetro + " cm" + "<br>El área de la circunferencia es" + " = " + areacirculo + " cm2" + "<br>El área de la esfera es" + " = " + areaesfera + " cm2" + "<br>El volúmen de la esfera es" + " = " + volumenesfera + " cm3";
+              }
+              else {
+                  alert("El valor introducido no es un número");
+              }    
+          }`}
             codeBlock
             theme={github}
             showLineNumbers={true}
@@ -176,7 +174,7 @@ function Tema3() {
             language="javascript"
             text={`function Calcular(){
               let fecha = document.getElementById("fecha").value;
-              let regfecha = /^\d{4}-(0[1-9]|1[012])\-(0[1-9]|[12][0-9]|3[01])$/;
+              let regfecha = /^\d{4}\-(0[1-9]|1[012])\-(0[1-9]|[12][0-9]|3[01])$/;
               if (!fecha.match(regfecha)){
                  alert("Formato de fecha no válido");
               }
@@ -228,38 +226,45 @@ function Tema3() {
           <p className='titulocuadro'>Javascript</p>
           <CopyBlock
             language="javascript"
-            text={`//Haciendo pruebas funciona bien en Windows con google chrome
-
+            text={`//Crea una función a la que se llamará desde un botón en el HTML
             function abrir(){
+                //Abre una ventana de 400 x 400.
                 ventana = window.open("" ,"" , "width=400,height=400");
             
-                //Elección minimizar maximizar
-                
                 var interval;
-            
+                //Llama a la función minimizar en caso de que la ventana sea mayor 
                 if (ventana.innerWidth >= 400 & ventana.innerHeight >= 400) {
                     interval = setInterval(minimizar, 1000);
                 }
+                //Llama a la función maximizar si la ventana es menor de 160
                 else if (ventana.innerWidth <= 160 & ventana.innerHeight <= 160) {
                     interval = setInterval(maximizar, 1000);
                 }
             
-                //modificadores de tamaño
-            
                 function minimizar(){
+                    //Redimensiona la ventana - 40
                     ventana.resizeBy(-40, -40);
+                    //Se enfoca en un elemento concreto
                     ventana.focus();
+                    //Si la ventana es menor de 160
                     if(ventana.innerWidth <= 160 & ventana.innerHeight <= 160){
+                        //limpia el intervalo
                         clearInterval(interval);
+                        //lo setea a 1000
                         interval = setInterval(maximizar, 1000);
                     }
                 }
             
                 function maximizar(){
+                    //Redimensiona el tamaño de la ventana
                     ventana.resizeBy(+40, +40);
+                    //Se enfoca en la ventana creada
                     ventana.focus();
+                    //Si el tamaño de la ventana es mayor de 400 se ejecuta
                     if(ventana.innerWidth >= 400 & ventana.innerHeight >= 400){
+                        //Limpia el valor del intervalo 
                         clearInterval(interval);
+                        //Lo setea a 1000
                         interval = setInterval(minimizar, 1000);
                     }
                 }
@@ -297,42 +302,53 @@ function Tema3() {
           <p className='titulocuadro'>Javascript</p>
           <CopyBlock
             language="javascript"
-            text={`//Haciendo pruebas funciona bien en Windows con google chrome
-
-            function abrir(){
-                ventana = window.open("" ,"" , "width=400,height=400");
+            text={`//Función con la funcionalidad de reloj
+            function reloj() {
+                //Se obtienen los datos de la hora actual
+                let dia = new Date();
+                let hora = dia.getHours();
+                let minuto = dia.getMinutes();
+                let segundo = dia.getSeconds();
+                let horario = "am";
             
-                //Elección minimizar maximizar
+                //Comprueba la hora y si es mayor de 12 resta 12 para mantener el formato de 12 horas 
+                if (hora > 12){
+                    hora = hora - 12;
+                }
+                //Si la hora es menor o igual a 12 muestra pm
+                if (hora >= 12){
+                    horario = "pm";
+                }
+                //Obtiene la hora actual
+                if (hora < 10) {
+                   hora = "0" + hora;
+                   }
+                //Obtiene los minutos actuales
+                if (minuto < 10) {
+                   minuto = "0" + minuto;
+                   }
+                //Obtiene los segundos actuales
+                if (segundo < 10) {
+                   segundo = "0" + segundo;
+                   }
+                //Define que queremos mostrar
+                let muestrareloj = hora + " : " + minuto + " : " + segundo + " " + horario;	
                 
-                var interval;
+                return muestrareloj; 
+                
+            }
             
-                if (ventana.innerWidth >= 400 & ventana.innerHeight >= 400) {
-                    interval = setInterval(minimizar, 1000);
-                }
-                else if (ventana.innerWidth <= 160 & ventana.innerHeight <= 160) {
-                    interval = setInterval(maximizar, 1000);
-                }
             
-                //modificadores de tamaño
-            
-                function minimizar(){
-                    ventana.resizeBy(-40, -40);
-                    ventana.focus();
-                    if(ventana.innerWidth <= 160 & ventana.innerHeight <= 160){
-                        clearInterval(interval);
-                        interval = setInterval(maximizar, 1000);
-                    }
-                }
-            
-                function maximizar(){
-                    ventana.resizeBy(+40, +40);
-                    ventana.focus();
-                    if(ventana.innerWidth >= 400 & ventana.innerHeight >= 400){
-                        clearInterval(interval);
-                        interval = setInterval(minimizar, 1000);
-                    }
-                }
-            }`}
+            function actualizar() {
+            //Llama a la función reloj
+            muestrahora = reloj();
+            //Obtiene el elemento con id reloj
+            muestrareloj = document.getElementById("reloj");
+            //Pinta la hora en el elemento anterior
+            muestrareloj.innerHTML = muestrahora;
+            }
+            //Actualiza el reloj en pantalla cada segundo
+            setInterval(actualizar,1000);`}
             codeBlock
             theme={github}
             showLineNumbers={true}
@@ -372,42 +388,56 @@ function Tema3() {
           <p className='titulocuadro'>Javascript</p>
           <CopyBlock
             language="javascript"
-            text={`//Haciendo pruebas funciona bien en Windows con google chrome
-
-            function abrir(){
-                ventana = window.open("" ,"" , "width=400,height=400");
+            text={`//Define las recetas del libro.
+            var recetas = [
+              {receta:'Patatas fritas: Pelar patatas, lavarlas, cortarlas e introducirlas en aceite hirviendo hasta que estén doradas'},
+              {receta:'Pollo al Horno: Trocear pollo, salpimentar y meter al horno'},
+              {receta:'Macarrones con tomate: Cocer los macarrones, escurrirlos y echar tomate de bote'},
+              {receta:'Huevo frito: Rompe un huevo y échalo a la sartén con aceite hirviendo'},
+              {receta:'Tortilla fracesa: Rompe huevos, bátelos y ponlos en una sartén un poco de aceite'}
+            ];
+            //Crea la la lista de elementos:
+            function crear() {
             
-                //Elección minimizar maximizar
+            
+              let ol = document.createElement("ol");
+            
+              //Recorre las recetas y las muestra por pantalla
+              recetas.forEach(element => {
+            
+                //Crea una lista
+                let li1 = document.createElement("li");
+                //Añade a la lista la receta
+                let li1Texto = document.createTextNode(element.receta);
+                li1.appendChild(li1Texto);
+                ol.appendChild(li1);
                 
-                var interval;
+                document.body.appendChild(ol);
+              });
             
-                if (ventana.innerWidth >= 400 & ventana.innerHeight >= 400) {
-                    interval = setInterval(minimizar, 1000);
-                }
-                else if (ventana.innerWidth <= 160 & ventana.innerHeight <= 160) {
-                    interval = setInterval(maximizar, 1000);
-                }
+            }
             
-                //modificadores de tamaño
+            //Eliminar elemento de la lista
+            function eliminar() {
             
-                function minimizar(){
-                    ventana.resizeBy(-40, -40);
-                    ventana.focus();
-                    if(ventana.innerWidth <= 160 & ventana.innerHeight <= 160){
-                        clearInterval(interval);
-                        interval = setInterval(maximizar, 1000);
-                    }
-                }
+              //Obtiene del input la opción a eliminar
+              let opcion = document.getElementById("opcion").value;
+              //resta uno a la opción para que concuerde con la posición en el array
+              let valor = opcion-1;
+              //Comprueba que el valor introducido exista en el array
+              if (valor % 1 == 0 && valor > -1 && valor < recetas.length) {
+                recetas.splice(valor);
+              }
+              else {
+                //Informa de un error
+                alert("Número de receta no válido")
+              }
+              //Elimina el elemento seleccionado de la lista
+              document.getElementsByTagName("li")[valor].remove();
+            }
             
-                function maximizar(){
-                    ventana.resizeBy(+40, +40);
-                    ventana.focus();
-                    if(ventana.innerWidth >= 400 & ventana.innerHeight >= 400){
-                        clearInterval(interval);
-                        interval = setInterval(minimizar, 1000);
-                    }
-                }
-            }`}
+            //Ejecuta la función crear al iniciar la página
+            window.onload = crear;`}
             codeBlock
             theme={github}
             showLineNumbers={true}
@@ -422,17 +452,53 @@ function Tema3() {
             language="html"
             text={`<!DOCTYPE html>
             <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <script src="./JavaScript/ejercicio6.js"></script>
-                <title>Document</title>
-            </head>
-            <body>
-              <input id="opcion" placeholder="Receta a eliminar">
-              <button onclick="eliminar()">Eliminar</button>
-            </body>
+              <head>
+                  <meta charset="UTF-8">
+                  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                  <script src="./JavaScript/ejercicio7.js"></script>
+                  <title>Document</title>
+              </head>
+              <body>
+                  <p>Liga BBVA</p>
+                    <table border="1">
+                      <tr>
+                        <td><b>POSICION</b></td>
+                        <td><b>EQUIPO</b></td>
+                        <td><b>PUNTOS</b></td>
+                      </tr>
+                      <tr id="fila1">
+                        <td>1</td>
+                        <td>FC Barcelona</td>
+                        <td>20</td>
+                      </tr>
+                      <tr id="fila2">
+                        <td>2</td>
+                        <td>Betis</td>
+                        <td>18</td>
+                      </tr>
+                      <tr id="fila3">
+                        <td>3</td>
+                        <td>Atlético de Madrid</td>
+                        <td>12</td>
+                      </tr>
+                      <tr id="fila4">
+                        <td>4</td>
+                        <td>Sevilla FC</td>
+                        <td>9</td>
+                      </tr>
+                    </table>
+                <p><b>POSICION:</b></p>
+                <input id="pos">
+                <p><b>EQUIPO:</b></p>
+                <input id="equi">
+                <p><b>PUNTOS:</b></p>
+                <input id="pun">
+                <br>
+                <br>
+                <input type="button" id="aplicar" value="aplicar" onclick="actualizar()">
+            
+              </body>
             </html>`}
             codeBlock
             theme={github}
@@ -441,42 +507,51 @@ function Tema3() {
           <p className='titulocuadro'>Javascript</p>
           <CopyBlock
             language="javascript"
-            text={`//Haciendo pruebas funciona bien en Windows con google chrome
-
-            function abrir(){
-                ventana = window.open("" ,"" , "width=400,height=400");
-            
-                //Elección minimizar maximizar
-                
-                var interval;
-            
-                if (ventana.innerWidth >= 400 & ventana.innerHeight >= 400) {
-                    interval = setInterval(minimizar, 1000);
+            text={`function actualizar(){
+              //Obtiene la posición introducida en el input
+              let posicion = document.getElementById("pos").value;
+              //Comprueba si la posición es un número entero
+              if(Number.isInteger(parseInt(posicion))) {
+                  //Informa por consola si es entero
+                  console.log('La variable es entera');
+                }else{
+                    //Si no es entero Muestra un mensaje de error
+                    alert("El valor introducido en posición no es numérico");
                 }
-                else if (ventana.innerWidth <= 160 & ventana.innerHeight <= 160) {
-                    interval = setInterval(maximizar, 1000);
+              //Obtiene el valor equipo de del input
+              let equipo = document.getElementById("equi").value;
+              //Obtiene el vqlor punto del input
+              let puntos = document.getElementById("pun").value;
+              //Comprueba si el número es entero
+              if(Number.isInteger(parseInt(puntos))) {
+                  //Informa por consola si sale bien
+                  console.log('La variable es entera');
+                }else{
+                    //Si no es entero muestra un error
+                    alert("El valor introducido en puntos no es numérico");
                 }
-            
-                //modificadores de tamaño
-            
-                function minimizar(){
-                    ventana.resizeBy(-40, -40);
-                    ventana.focus();
-                    if(ventana.innerWidth <= 160 & ventana.innerHeight <= 160){
-                        clearInterval(interval);
-                        interval = setInterval(maximizar, 1000);
-                    }
-                }
-            
-                function maximizar(){
-                    ventana.resizeBy(+40, +40);
-                    ventana.focus();
-                    if(ventana.innerWidth >= 400 & ventana.innerHeight >= 400){
-                        clearInterval(interval);
-                        interval = setInterval(minimizar, 1000);
-                    }
-                }
-            }`}
+          
+              //Modificar el contenido de la fina en función de la posición introducida.
+              let identificador = "fila"+ posicion;
+          
+              //Si el identificador devuelve true en la comprobación
+              if (document.getElementById(identificador)){
+                  //Cambia la posición
+                  switch (posicion){
+                      case posicion:
+                      //Selecciona la posición en la tabla mediante el identificador y lo modifica con el valor correspondiente.
+                      document.querySelector("#"+identificador).querySelector("td").nextElementSibling.textContent = equipo;
+                      document.querySelector("#"+identificador).querySelector("td").nextElementSibling.nextElementSibling.textContent = puntos;
+                      break;
+                  }
+          
+              }
+              //Muestra un error indicando que la posición no existe
+              else {
+                  alert("La posición introducida no existe");
+              }
+             
+          }`}
             codeBlock
             theme={github}
             showLineNumbers={true}
@@ -501,12 +576,11 @@ function Tema3() {
                 <meta charset="UTF-8">
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <script src="./JavaScript/ejercicio6.js"></script>
+                <script src="./JavaScript/ejercicio8.js"></script>
                 <title>Document</title>
             </head>
             <body>
-              <input id="opcion" placeholder="Receta a eliminar">
-              <button onclick="eliminar()">Eliminar</button>
+                
             </body>
             </html>`}
             codeBlock
@@ -516,41 +590,50 @@ function Tema3() {
           <p className='titulocuadro'>Javascript</p>
           <CopyBlock
             language="javascript"
-            text={`//Haciendo pruebas funciona bien en Windows con google chrome
-
-            function abrir(){
-                ventana = window.open("" ,"" , "width=400,height=400");
+            text={`//Comprueba que existen cookies, si no existen
+            if (!document.cookie){
+                //Pide introducir los valores de las cookies
+                let nombre=prompt("introduce tu nombre");
+                let direccion=prompt("Introduce tu dirección");
+                let edad=prompt("introduce tu edad");
+                let profesion=prompt("introduce tu dirección");
+                //Crea las cookies con los valores que ha introducido el usuario
+                document.cookie="nomb=" + nombre;
+                document.cookie="dir=" + direccion;
+                document.cookie="eda=" + edad;
+                document.cookie="prof=" + profesion;
+            }
+            else{
+                //Muestra las cookies almacenadas
+                console.log(document.cookie);
+                //Elimina las cookies existentes
+                document.cookie="nomb= ;max-age=0;";
+                document.cookie="dir= ;max-age=0;";
+                document.cookie="eda= ;max-age=0;";
+                document.cookie="prof= ;max-age=0;";
+            }
             
-                //Elección minimizar maximizar
-                
-                var interval;
-            
-                if (ventana.innerWidth >= 400 & ventana.innerHeight >= 400) {
-                    interval = setInterval(minimizar, 1000);
+            //Comprueba si existe información almacenada en el localstorage
+            if (localStorage.length > 0) {
+                //En caso de que exista, las muestra por consola.
+                console.log(localStorage);
+                //Borra el localstorage existente
+                localStorage.removeItem("nomb");
+                localStorage.removeItem("dir");
+                localStorage.removeItem("eda");
+                localStorage.removeItem("prof");
                 }
-                else if (ventana.innerWidth <= 160 & ventana.innerHeight <= 160) {
-                    interval = setInterval(maximizar, 1000);
-                }
-            
-                //modificadores de tamaño
-            
-                function minimizar(){
-                    ventana.resizeBy(-40, -40);
-                    ventana.focus();
-                    if(ventana.innerWidth <= 160 & ventana.innerHeight <= 160){
-                        clearInterval(interval);
-                        interval = setInterval(maximizar, 1000);
-                    }
-                }
-            
-                function maximizar(){
-                    ventana.resizeBy(+40, +40);
-                    ventana.focus();
-                    if(ventana.innerWidth >= 400 & ventana.innerHeight >= 400){
-                        clearInterval(interval);
-                        interval = setInterval(minimizar, 1000);
-                    }
-                }
+            else {
+                //Si no existe, nos solicita su contenido
+                let nombre=prompt("introduce tu nombre");
+                let direccion=prompt("Introduce tu dirección");
+                let edad=prompt("introduce tu edad");
+                let profesion=prompt("introduce tu dirección");
+                //Se crea el localstorage
+                localStorage.setItem("nomb",nombre);
+                localStorage.setItem("dir",direccion);
+                localStorage.setItem("eda", edad);
+                localStorage.setItem("prof", profesion);
             }`}
             codeBlock
             theme={github}
