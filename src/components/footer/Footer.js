@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import { FaTwitterSquare, FaGithubSquare, FaInstagramSquare, FaLinkedin  } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -9,16 +10,16 @@ function Footer() {
                 <div class="row">
                     <div class="col-sm-6 col-md-3 item">
                         <h3 className='titulofooter'>Contacto Profesional</h3>
-                        <ul>
-                            <li><a href="https://github.com/jjsus96">Github</a></li>
-                            <li><a href="https://www.linkedin.com/in/jes%C3%BAs-sayago-mey-0b50ba198/">Linkedin</a></li>
+                        <ul className='listafooter'>
+                            <a href="https://github.com/jjsus96"><FaGithubSquare className='iconosfooter'/></a>
+                            <a href="https://www.linkedin.com/in/jes%C3%BAs-sayago-mey-0b50ba198/"><FaLinkedin className='iconosfooter'/></a>
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-3 item">
                         <h3 className='titulofooter'>Redes Sociales</h3>
-                        <ul>
-                            <li><a href="https://www.instagram.com/jjsus96/?hl=es">Instagram</a></li>
-                            <li><a href="https://twitter.com/jjsus96">Twitter</a></li>
+                        <ul className='listafooter'>
+                            <a href="https://www.instagram.com/jjsus96/?hl=es"><FaInstagramSquare className='iconosfooter'/></a>
+                            <a href="https://twitter.com/jjsus96"><FaTwitterSquare className='iconosfooter'/></a>
                         </ul>
                     </div>
                     <div class="col-md-6 item text">

@@ -15,6 +15,7 @@ export default class Navbarcomp extends Component {
             <Nav.Link href="/Portfolio#formation">Formación</Nav.Link>
             <Nav.Link href="/Portfolio#project">Proyectos</Nav.Link>
             <Nav.Link href="/Portfolio#contact">Contacto</Nav.Link>
+            <Nav.Link href="/Portfolio#clima">Clima</Nav.Link>
           </Nav>
           <Nav>
           <NavDropdown title="Recuperaciones" id="collasible-nav-dropdown">

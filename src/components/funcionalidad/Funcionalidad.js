@@ -22,7 +22,7 @@ function Funcionalidad() {
 
   return (
     <div>
-        <h1 className='titulofuncionalidad'>Funcionalidad</h1>
+        <h1 className='titulofuncionalidad' id='clima'>Funcionalidad</h1>
         <h3 className='subtitulofuncionalidad'>EL TIEMPO</h3>
         <p className='definicion'>Introduce el nombre de cualquier ciudad para saber sus condiciones meteorológicas en este momento.</p>
         <input className='inputfuncionalidad' 

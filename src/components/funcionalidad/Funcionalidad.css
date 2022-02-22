@@ -19,8 +19,8 @@
 }
 
 .marcotemporal{
-    background: rgb(0,15,36);
-    background: radial-gradient(circle, rgba(0,15,36,1) 0%, rgba(9,14,121,1) 35%, rgba(141,0,255,1) 100%);
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(33,33,33,1) 35%, rgba(90,90,90,1) 100%);
     margin-left: 25%;
     margin-right: 25%;
     border-radius: 12px;
