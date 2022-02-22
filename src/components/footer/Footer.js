@@ -1,6 +1,5 @@
 import React from 'react'
 import './Footer.css'
-import FontAwesome from 'react-fontawesome';
 
 function Footer() {
   return (
@@ -26,7 +25,7 @@ function Footer() {
                         <h3 className='titulofooter'>Resumen</h3>
                         <p>Este es un portfolio personal en el que me presento al resto del mundo, explico el camino que he seguido hasta el momento y muestro los proyectos que he logrado desarrollar.</p>
                     </div>
-                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                    
                 </div>
                 <p class="copyright">Jesús Sayago Mey © 2022</p>
             </div>

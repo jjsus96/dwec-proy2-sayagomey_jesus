@@ -4,6 +4,7 @@ import Inicio from '../inicio/Inicio'
 import Formacion from '../formacion/Formacion'
 import Proyectos from '../proyectos/Proyectos';
 import Contacto from '../contacto/Contacto';
+import Funcionalidad from '../funcionalidad/Funcionalidad';
 
 function Portfolio() {
   return (
@@ -13,6 +14,7 @@ function Portfolio() {
             <Formacion />
             <Proyectos />
             <Contacto />
+            <Funcionalidad />
             <br></br>
         </div>
       </div>
