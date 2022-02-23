@@ -6,6 +6,15 @@ https://github.com/jjsus96/dwec-proy2-sayagomey_jesus.git
 
 Falta desplegarlo
 
+### Librerías instaladas:
+
+npm i react-vertical-timeline-component
+npm i react-code-blocks
+npm i react-router-dom
+npm install formik --save
+npm install react-icons
+npm install bootstrap
+
 ### Defensa del proyecto:
 
 Proyecto desarrollado con React, en el cual se han utilizado las librerías React Router DOM, React-Vertical-Timeline_Component, React-code-blocks, Formik, Fontawesome.
