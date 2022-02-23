@@ -2,6 +2,8 @@ import React from 'react'
 import './Tema3.css';
 import { CopyBlock, github } from "react-code-blocks";
 
+//Muestra los enunciados de los ejercicios y utiliza React-code-blocks para mostrar el código aislado sin que se ejecute.
+
 function Tema3() {
   return (
     <div id='tema3' className='tema3'>

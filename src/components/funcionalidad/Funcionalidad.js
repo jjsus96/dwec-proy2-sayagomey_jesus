@@ -1,17 +1,23 @@
 import React, {useState} from 'react'
 import './Funcionalidad.css'
 
+
+//Llamada a una api que devuelvel los resultados y los muestra por pantalla
 function Funcionalidad() {
-
+  //Definimos nuestra clave para poder usar la API  
   let apikey = '26820b81e497e01c0449a96f5d932ead';
+  //Almacena el resultado devuelto por la API
   let [tiempoinfo, settiempo] = useState([{}]);
+  //Almacena el valor introducido en en el input
   let [ciudad, setciudad] = useState("");
-
+ 
   let gettiempo = (e) => {
+      //Al pulsar enter, realiza la petición a la api con los parámetros que le hemos asignado.
       if (e.key === "Enter") {
           fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&units=metric&APPID=${apikey}`).then(
               response => response.json()
           ).then(
+              //Pasa la información y setea de nuevo el valor del input.
               data => {
                   settiempo(data);
                   setciudad("")
@@ -30,6 +36,7 @@ function Funcionalidad() {
         onChange={e => setciudad(e.target.value)}
         value={ciudad}
         onKeyPress={gettiempo} />
+        {/* Si la petición devuelve algo, lo muestra por pantalla, en caso contrario, no*/}
         {(typeof tiempoinfo.main != "undefined") ? (
             <div className='marcotemporal'>
                 <p className='resultado'>Ciudad: {tiempoinfo.name}  ({tiempoinfo.sys.country})</p>

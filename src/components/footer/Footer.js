@@ -2,6 +2,8 @@ import React from 'react'
 import './Footer.css'
 import { FaTwitterSquare, FaGithubSquare, FaInstagramSquare, FaLinkedin  } from "react-icons/fa";
 
+//Pie de página que muestra información de contacto.
+
 function Footer() {
   return (
     <div class="footer">

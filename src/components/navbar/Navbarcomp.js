@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './Navbar.css';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
+
+//Barra de navegación que hace uso de Bootstrap y enruta con react router DOM.
 export default class Navbarcomp extends Component {
   render() {
     return <div>

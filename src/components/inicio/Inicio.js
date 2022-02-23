@@ -2,6 +2,7 @@ import React from 'react';
 import './Inicio.css';
 import Jesus from './../../media/Jesus.jpg'
 
+//Muestra Información sobre el usuario del portfolio.
 
 export const Inicio = () => {
   return <div className='contenedor' id='home'>

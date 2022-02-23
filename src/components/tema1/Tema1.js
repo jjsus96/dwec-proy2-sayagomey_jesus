@@ -9,6 +9,8 @@ import Visual from './../../media/Visual.png';
 import Chrome from './../../media/Chrome.png';
 import Git from './../../media/Git.png';
 
+//Con CSS y HTML Se muestra artículos creados por el usuario.
+
 export const Tema1 = () => {
   return <div id='tema1'>
       <h1 className='titulo_tema'>Recuperación Tema 1</h1>

@@ -4,6 +4,8 @@ import Card from 'react-bootstrap/Card'
 import Rick from './../../media/Rick.jpg';
 import './Proyectos.css'
 
+//Muestra los proyectos desplegados utilizando las tarjetas de Bootstrap.
+
 function Proyectos() {
   return (
       <div id='project'>

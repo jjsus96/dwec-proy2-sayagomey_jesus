@@ -5,6 +5,8 @@ import timelineElements from "./timelineElements";
 import {  VerticalTimeline,  VerticalTimelineElement} from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
+//Genera el timeline con los datos de TimelineElements.js
+
 function App() {
   let workIconStyles = { background: "#06D6A0" };
   let schoolIconStyles = { background: "#f9c74f" };
@@ -15,7 +17,7 @@ function App() {
       <VerticalTimeline>
         {timelineElements.map((element) => {
           let isWorkIcon = element.icon === "work";
-
+          //Devuelve los valores que forman parte del archivo TimelineElements.js
           return (
             <VerticalTimelineElement
               key={element.key}

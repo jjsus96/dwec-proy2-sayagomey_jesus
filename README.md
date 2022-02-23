@@ -1,3 +1,39 @@
+### Enlace a Github:
+
+https://github.com/jjsus96/dwec-proy2-sayagomey_jesus.git
+
+### URL despliegue de proyecto:
+
+Falta desplegarlo
+
+### Defensa del proyecto:
+
+Proyecto desarrollado con React, en el cual se han utilizado las librerías React Router DOM, React-Vertical-Timeline_Component, React-code-blocks, Formik, Fontawesome.
+
+A continuación se desglosa punto por punto cada uno de los componentes:
+
+-Barra de navegación: Se ha utilizado Bootstrap para el estilo y react router dom para definir las rutas a las que dirige cada apartado.
+
+-Presentación: El texto se ha realizado con html y css y a la imagen se le ha dado el estilu utilizando Bootstrap.
+
+-Timeline: Realizado con React-Timeline-Componenent, se ha definido la información en un fichero JS separado y se ha llamado a la información al componente principal.
+
+-Proyectos: Texto con css y html, la tarjeta se ha hecho con bootstrap, el botón enlaza con un proyecto ya desplegado. 
+
+-Contacto: Formulario realizado y validado con Formik y css.
+
+-Funcionalidad: Llamada a API, para realizarla se ha utilizado un fetch y en la respuesta un condicional para mostrar la información en pantalla, o en caso de que sea null que no se muestre nada.
+
+-Footer: Se ha utilizado HTML, CSS, Bootstrap y FontAwesome.
+
+-Tema1: HTML y CSS para el texto e imágenes.
+
+-Tema3: HTML y CSS para el texto e imágenes y React code blocks para mostrar el código.
+
+### Enlace a Github:
+
+https://github.com/jjsus96/dwec-proy2-sayagomey_jesus.git
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

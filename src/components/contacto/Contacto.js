@@ -2,8 +2,11 @@ import React from 'react'
 import './Contacto.css'
 import { Formik, Field, Form } from 'formik';
 
+//Crea un formulario con Formik validado con expresiones regulares.
+
 const Contacto = () => {
 
+    //Validaciones.
     const validateForm = values => {
         const errors = {};
         if (!values.name) {
@@ -30,6 +33,8 @@ const Contacto = () => {
 
     return (
         <Formik
+
+            //Almacena los valores que introduce el usuario.
             initialValues={{ name: '', email: '', subject: '', content: '' }}
             onSubmit={(values, { setSubmitting }) => {
                 setTimeout(() => {
@@ -40,6 +45,8 @@ const Contacto = () => {
             validate={validateForm}
         >
             {(formik, isSubmitting) => (
+
+                //Se genera el formulario y se ejecutan las validaciones cuando se introducen los valores.
                 
                 <Form id='contact' className='centrar'>
                     <h1 className='nombre' id='contact'>Contacto</h1>

@@ -1,3 +1,5 @@
+//Almacena los parámetros que van a format parte del timeline
+
 let timelineElements = [
     {
       id: 1,
