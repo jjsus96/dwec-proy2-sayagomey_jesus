@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkdwec_proy2_sayagomey_jesus=self.webpackChunkdwec_proy2_sayagomey_jesus||[]).push([[6495],{3409:function(e){function s(e){e.languages.ini={comment:/^[ \t]*[;#].*$/m,selector:/^[ \t]*\[.*?\]/m,constant:/^[ \t]*[^\s=]+?(?=[ \t]*=)/m,"attr-value":{pattern:/=.*/,inside:{punctuation:/^[=]/}}}}e.exports=s,s.displayName="ini",s.aliases=[]}}]);
+//# sourceMappingURL=react-syntax-highlighter_languages_refractor_ini.709c69a2.chunk.js.map
