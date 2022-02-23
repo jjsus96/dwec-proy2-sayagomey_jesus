@@ -4,7 +4,7 @@ https://github.com/jjsus96/dwec-proy2-sayagomey_jesus.git
 
 ### URL despliegue de proyecto:
 
-Falta desplegarlo
+https://jjsus96.github.io/dwec-proy2-sayagomey_jesus/
 
 ### Librerías instaladas:
 
