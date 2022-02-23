@@ -15,7 +15,7 @@ function App() {
         <Route path='/Tema1' element= {<RecuperacionT1 />} />
         <Route path='/Tema3' element= {<RecuperacionT3 />} />
         <Route path='/Portfolio' element= {<Portfolio />} />
-        <Route path='' element= {<Portfolio />} />
+        <Route path='*' element= {<Portfolio />} />
       </Routes>
       <Footer />
     </BrowserRouter>
