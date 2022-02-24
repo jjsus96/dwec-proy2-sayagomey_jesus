@@ -9,15 +9,15 @@ export default class Navbarcomp extends Component {
     return <div>
       <Navbar className='menu' collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-        <Navbar.Brand as={Link} to={"/Portfolio"}>Jesús Sayago Mey</Navbar.Brand>
+        <Navbar.Brand as={Link} to={"/dwec-proy2-sayagomey_jesus"}>Jesús Sayago Mey</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/Portfolio#home">Inicio</Nav.Link>
-            <Nav.Link href="/Portfolio#formation">Formación</Nav.Link>
-            <Nav.Link href="/Portfolio#project">Proyectos</Nav.Link>
-            <Nav.Link href="/Portfolio#contact">Contacto</Nav.Link>
-            <Nav.Link href="/Portfolio#clima">Clima</Nav.Link>
+            <Nav.Link href="/dwec-proy2-sayagomey_jesus#home">Inicio</Nav.Link>
+            <Nav.Link href="/dwec-proy2-sayagomey_jesus#formation">Formación</Nav.Link>
+            <Nav.Link href="/dwec-proy2-sayagomey_jesus#project">Proyectos</Nav.Link>
+            <Nav.Link href="/dwec-proy2-sayagomey_jesus#contact">Contacto</Nav.Link>
+            <Nav.Link href="/dwec-proy2-sayagomey_jesus#clima">Clima</Nav.Link>
           </Nav>
           <Nav>
           <NavDropdown title="Recuperaciones" id="collasible-nav-dropdown">
