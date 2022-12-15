@@ -20,8 +20,8 @@ export default class Navbarcomp extends Component {
             <Nav.Link href="/dwec-proy2-sayagomey_jesus#clima">Clima</Nav.Link>
           </Nav>
           <Nav>
-          <NavDropdown title="Recuperaciones" id="collasible-nav-dropdown">
-              <NavDropdown.Item as={Link} to={"/Tema1"}>Tema 1</NavDropdown.Item>
+          <NavDropdown title="Trabajos" id="collasible-nav-dropdown">
+              <NavDropdown.Item as={Link} to={"/HE"}>Hacking Ético</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item as={Link} to={"/Tema3"}>Tema 3</NavDropdown.Item>
             </NavDropdown>

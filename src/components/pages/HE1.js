@@ -1,17 +1,17 @@
 import '../../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Tema1 from '../tema1/Tema1';
+import HE from '../he/HE';
 
-function RecuperacionT1() {
+function HE1() {
   return (
     <div className="App">
         <div className='principal'>
         <br></br>
-        <Tema1 />
+        <HE />
         <br></br>
         </div>
     </div>
   );
 }
 
-export default RecuperacionT1;
+export default HE1;
