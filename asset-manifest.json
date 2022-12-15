@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/dwec-proy2-sayagomey_jesus/static/css/main.95b19bee.css",
-    "main.js": "/dwec-proy2-sayagomey_jesus/static/js/main.8397c4ee.js",
-    "react-syntax-highlighter/refractor-core-import.js": "/dwec-proy2-sayagomey_jesus/static/js/react-syntax-highlighter/refractor-core-import.c248fd4a.chunk.js",
+    "main.css": "/dwec-proy2-sayagomey_jesus/static/css/main.8e8fccb7.css",
+    "main.js": "/dwec-proy2-sayagomey_jesus/static/js/main.b9482867.js",
+    "react-syntax-highlighter/refractor-core-import.js": "/dwec-proy2-sayagomey_jesus/static/js/react-syntax-highlighter/refractor-core-import.3b9e942d.chunk.js",
     "react-syntax-highlighter_languages_refractor_abap.js": "/dwec-proy2-sayagomey_jesus/static/js/react-syntax-highlighter_languages_refractor_abap.bbef768e.chunk.js",
     "react-syntax-highlighter_languages_refractor_actionscript.js": "/dwec-proy2-sayagomey_jesus/static/js/react-syntax-highlighter_languages_refractor_actionscript.e45b3530.chunk.js",
     "react-syntax-highlighter_languages_refractor_ada.js": "/dwec-proy2-sayagomey_jesus/static/js/react-syntax-highlighter_languages_refractor_ada.725c814d.chunk.js",
@@ -76,7 +76,7 @@
     "react-syntax-highlighter_languages_refractor_latex.js": "/dwec-proy2-sayagomey_jesus/static/js/react-syntax-highlighter_languages_refractor_latex.5b4463e9.chunk.js",
     "react-syntax-highlighter_languages_refractor_less.js": "/dwec-proy2-sayagomey_jesus/static/js/react-syntax-highlighter_languages_refractor_less.2e3104ca.chunk.js",
     "react-syntax-highlighter_languages_refractor_liquid.js": "/dwec-proy2-sayagomey_jesus/static/js/react-syntax-highlighter_languages_refractor_liquid.034854df.chunk.js",
-    "react-syntax-highlighter_languages_refractor_lisp.js": "/dwec-proy2-sayagomey_jesus/static/js/react-syntax-highlighter_languages_refractor_lisp.c5af551b.chunk.js",
+    "react-syntax-highlighter_languages_refractor_lisp.js": "/dwec-proy2-sayagomey_jesus/static/js/react-syntax-highlighter_languages_refractor_lisp.4af88a31.chunk.js",
     "react-syntax-highlighter_languages_refractor_livescript.js": "/dwec-proy2-sayagomey_jesus/static/js/react-syntax-highlighter_languages_refractor_livescript.88f3547d.chunk.js",
     "react-syntax-highlighter_languages_refractor_lolcode.js": "/dwec-proy2-sayagomey_jesus/static/js/react-syntax-highlighter_languages_refractor_lolcode.36865217.chunk.js",
     "react-syntax-highlighter_languages_refractor_lua.js": "/dwec-proy2-sayagomey_jesus/static/js/react-syntax-highlighter_languages_refractor_lua.857e5ce2.chunk.js",
@@ -167,9 +167,9 @@
     "index.html": "/dwec-proy2-sayagomey_jesus/index.html",
     "static/media/school.svg": "/dwec-proy2-sayagomey_jesus/static/media/school.a41655f6d5350015803153c7410cef6a.svg",
     "static/media/work.svg": "/dwec-proy2-sayagomey_jesus/static/media/work.3710b62484ed638074240e99317c6c60.svg",
-    "main.95b19bee.css.map": "/dwec-proy2-sayagomey_jesus/static/css/main.95b19bee.css.map",
-    "main.8397c4ee.js.map": "/dwec-proy2-sayagomey_jesus/static/js/main.8397c4ee.js.map",
-    "refractor-core-import.c248fd4a.chunk.js.map": "/dwec-proy2-sayagomey_jesus/static/js/react-syntax-highlighter/refractor-core-import.c248fd4a.chunk.js.map",
+    "main.8e8fccb7.css.map": "/dwec-proy2-sayagomey_jesus/static/css/main.8e8fccb7.css.map",
+    "main.b9482867.js.map": "/dwec-proy2-sayagomey_jesus/static/js/main.b9482867.js.map",
+    "refractor-core-import.3b9e942d.chunk.js.map": "/dwec-proy2-sayagomey_jesus/static/js/react-syntax-highlighter/refractor-core-import.3b9e942d.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_abap.bbef768e.chunk.js.map": "/dwec-proy2-sayagomey_jesus/static/js/react-syntax-highlighter_languages_refractor_abap.bbef768e.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_actionscript.e45b3530.chunk.js.map": "/dwec-proy2-sayagomey_jesus/static/js/react-syntax-highlighter_languages_refractor_actionscript.e45b3530.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_ada.725c814d.chunk.js.map": "/dwec-proy2-sayagomey_jesus/static/js/react-syntax-highlighter_languages_refractor_ada.725c814d.chunk.js.map",
@@ -243,7 +243,7 @@
     "react-syntax-highlighter_languages_refractor_latex.5b4463e9.chunk.js.map": "/dwec-proy2-sayagomey_jesus/static/js/react-syntax-highlighter_languages_refractor_latex.5b4463e9.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_less.2e3104ca.chunk.js.map": "/dwec-proy2-sayagomey_jesus/static/js/react-syntax-highlighter_languages_refractor_less.2e3104ca.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_liquid.034854df.chunk.js.map": "/dwec-proy2-sayagomey_jesus/static/js/react-syntax-highlighter_languages_refractor_liquid.034854df.chunk.js.map",
-    "react-syntax-highlighter_languages_refractor_lisp.c5af551b.chunk.js.map": "/dwec-proy2-sayagomey_jesus/static/js/react-syntax-highlighter_languages_refractor_lisp.c5af551b.chunk.js.map",
+    "react-syntax-highlighter_languages_refractor_lisp.4af88a31.chunk.js.map": "/dwec-proy2-sayagomey_jesus/static/js/react-syntax-highlighter_languages_refractor_lisp.4af88a31.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_livescript.88f3547d.chunk.js.map": "/dwec-proy2-sayagomey_jesus/static/js/react-syntax-highlighter_languages_refractor_livescript.88f3547d.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_lolcode.36865217.chunk.js.map": "/dwec-proy2-sayagomey_jesus/static/js/react-syntax-highlighter_languages_refractor_lolcode.36865217.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_lua.857e5ce2.chunk.js.map": "/dwec-proy2-sayagomey_jesus/static/js/react-syntax-highlighter_languages_refractor_lua.857e5ce2.chunk.js.map",
@@ -323,7 +323,7 @@
     "react-syntax-highlighter_languages_refractor_yaml.0b50d485.chunk.js.map": "/dwec-proy2-sayagomey_jesus/static/js/react-syntax-highlighter_languages_refractor_yaml.0b50d485.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.95b19bee.css",
-    "static/js/main.8397c4ee.js"
+    "static/css/main.8e8fccb7.css",
+    "static/js/main.b9482867.js"
   ]
 }
